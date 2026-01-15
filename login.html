@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - SawitKu</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen">
+
+  <!-- Gray Header -->
+  <div class="h-14 bg-gray-200 flex items-center px-4">
+    <a href="index.html">
+      <button class="text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+    </a>
+  </div>
+
+  <!-- Header Rounded Image -->
+  <div class="relative h-[38vh] overflow-hidden" style="border-bottom-left-radius: 160px 130px; border-bottom-right-radius: 160px 130px;">
+
+    <!-- Background Image -->
+    <div 
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('asset/bg-login.png');"
+    ></div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Text -->
+    <div class="relative z-10 h-full flex flex-col justify-center px-6 text-white">
+      <h1 class="text-4xl font-bold mb-2">Halo!</h1>
+      <p class="text-lg opacity-90">Selamat Datang di SawitKu</p>
+    </div>
+
+  </div>
+
+  <!-- Form Section -->
+  <div class="px-6 mt-10">
+    <h2 class="text-2xl font-bold mb-8">Login</h2>
+
+    <form class="space-y-6">
+      <input
+        type="email"
+        placeholder="Masukkan Email"
+        class="w-full px-5 py-4 rounded-xl bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-600"
+      />
+
+      <div class="relative">
+        <input
+          type="password"
+          placeholder="Masukkan Kata Sandi"
+          class="w-full px-5 py-4 rounded-xl bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-600"
+        />
+      </div>
+
+      <button
+        type="button"
+        class="w-full py-4 rounded-xl bg-green-600 text-white font-semibold shadow-lg active:scale-95 transition"
+        onclick="openModal()"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+
+  <!-- MODAL OVERLAY -->
+  <div
+    id="modal"
+    class="fixed inset-0 bg-black/40 flex items-center justify-center hidden z-50"
+  >
+    <!-- MODAL BOX -->
+    <div class="bg-green-600 rounded-2xl w-[85%] max-w-sm p-6 relative shadow-xl">
+
+      <!-- Close Button -->
+       <a href="home.html">
+         <button
+           class="absolute top-4 right-4 text-white"
+         >
+           ✕
+         </button>
+       </a>
+
+      <!-- Content -->
+      <div class="text-center text-white">
+        <h2 class="text-xl font-bold mb-1">Sukses</h2>
+        <p class="mb-6">Login Berhasil</p>
+
+        <a href="home.html">
+          <button
+            class="w-full bg-green-100 text-gray-900 py-3 rounded-xl font-semibold"
+          >
+            Oke
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function openModal() {
+      document.getElementById("modal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>

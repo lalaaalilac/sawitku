@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SawitKu</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* optional: font smoothing */
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden">
+
+  <!-- Background -->
+  <div 
+    class="relative h-full w-full bg-cover bg-center"
+    style="background-image: url('asset/bg.png');"
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+
+      <!-- Title -->
+      <h1 class="text-white text-4xl font-bold mb-2">
+        SawitKu
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-white/90 text-lg mb-12">
+        Koperasi Bumi Makmur
+      </p>
+
+      <!-- Buttons -->
+      <div class="w-full max-w-sm">
+        <a href="login.html" class="">
+          <button
+            class="w-full py-3 rounded-xl bg-white/40 text-white font-semibold backdrop-blur-md"
+          >
+            Log In
+          </button>
+        </a>
+
+        <a href="introduction.html">
+          <button
+            class="w-full mt-5 py-3 rounded-xl bg-white/40 text-white font-semibold backdrop-blur-md"
+          >
+            Get Started
+          </button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

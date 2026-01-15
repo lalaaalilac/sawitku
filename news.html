@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SawitKu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="max-w-md mx-auto bg-white min-h-screen pb-20">
+        <!-- Header -->
+        <div class="bg-gray-200 px-4 py-4 flex items-center">
+            <a href="home.html">
+              <button class="mr-4">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                  </svg>
+              </button>
+            </a>
+            <h1 class="text-lg font-medium">Berita</h1>
+        </div>
+
+        <!-- Content -->
+        <div class="px-4 py-6">
+            <!-- Headline Image -->
+            <div class="mb-6">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" 
+                     alt="Headline" 
+                     class="w-full h-[400px] object-cover rounded-lg shadow-md">
+            </div>
+
+            <!-- Title and Share Button -->
+            <div class="flex items-start justify-between mb-4">
+                <div class="flex items-start space-x-3 flex-1">
+                    <!-- Icon -->
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                            <span class="text-green-600 font-bold text-sm">News</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Title -->
+                    <div class="flex-1">
+                        <h1 class="text-xl font-bold text-gray-900 leading-tight">
+                            Lorem ipsum dolor sit amet
+                        </h1>
+                    </div>
+                </div>
+                
+                <!-- Share Button -->
+                <button class="ml-3 px-6 py-2 bg-green-600 text-white rounded-full text-sm font-semibold hover:bg-green-700 transition flex-shrink-0">
+                    Bagikan
+                </button>
+            </div>
+
+            <!-- Article Content -->
+            <div class="space-y-4 text-gray-800 leading-relaxed">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis libero accusantium, quod assumenda odit vero quos quaerat voluptatem, totam error optio! Alias nostrum eius placeat nisi mollitia iure velit!
+                </p>
+                
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nam, asperiores beatae reprehenderit quibusdam amet dolorum debitis eligendi porro minus ullam, laborum velit sunt nostrum molestias quo aperiam ut. Delectus.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod blanditiis ducimus sit, tempore eligendi, consequuntur nulla amet ipsa nemo ullam, vitae suscipit! Natus praesentium possimus fugit cupiditate eius rerum alias.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 h-15">
+          <div class="flex justify-around items-center py-3">
+              <a href="home.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 00.707-1.707l-9-9a.999.999 0 00-1.414 0l-9 9A1 1 0 003 13z"></path>
+                    </svg>
+                    <div class="w-8 h-1 bg-gray-900 rounded-full"></div>
+                </button>
+              </a>
+              <a href="profile.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path>
+                    </svg>
+                </button>
+              </a>
+              <a href="transaction.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                </button>
+              </a>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

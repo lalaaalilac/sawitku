@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SawitKu</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+  <!-- Header Gray -->
+  <div class="h-14 bg-gray-200 flex items-center px-4">
+    <a href="index.html">
+      <button class="text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+    </a>
+  </div>
+
+  <!-- Header Image Rounded -->
+  <div
+    class="relative h-[38vh] overflow-hidden"
+    style="border-bottom-left-radius: 160px 130px; border-bottom-right-radius: 160px 130px;"
+  >
+    <!-- Image -->
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('./asset/bg-intro.png');"
+    ></div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="flex-1 flex flex-col items-center text-center px-8 mt-10">
+    <h1 class="text-3xl font-bold mb-4">SawitKu</h1>
+
+    <p class="text-gray-600 leading-relaxed max-w-sm">
+      Lorem ipsum dolor sit amet, vel eu omnes postea commune,
+      discere nostrum fastidii et vis.
+    </p>
+  </div>
+
+  <!-- Button -->
+  <div class="px-8 pb-10">
+    <a href="login.html">
+      <button
+        class="w-full py-4 rounded-2xl bg-green-600 text-white font-semibold text-lg shadow-lg active:scale-95 transition"
+      >
+        Start
+      </button>
+    </a>
+  </div>
+
+</body>
+</html>

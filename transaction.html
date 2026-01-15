@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SawitKu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-md mx-auto bg-white min-h-screen flex flex-col">
+        <!-- Header -->
+        <div class="bg-gray-200 px-6 py-4">
+            <h1 class="text-xl font-semibold text-gray-800">Transaksi</h1>
+        </div>
+
+        <!-- Profile Picture Section -->
+        <div class="flex justify-center py-8">
+          <img src="asset/img-transaction.png" alt="Plant" class="w-[800px] object-cover">
+        </div>
+
+        <!-- Menu Items -->
+        <div class="flex-1 px-6">
+            <!-- Riwayat Transaksi -->
+            <a href="transaction-history.html">
+              <div class="border-b border-gray-300 py-4 flex items-center justify-between cursor-pointer hover:bg-gray-50">
+                  <span class="text-base font-medium text-gray-800">Riwayat Transaksi</span>
+                  <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+              </div>
+            </a>
+
+            <!-- Bukti Transakti -->
+            <a href="transaction-receipt.html">
+                <div class="border-b border-gray-300 py-4 flex items-center justify-between cursor-pointer hover:bg-gray-50">
+                    <span class="text-base font-medium text-gray-800">Bukti Transakti</span>
+                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Metode Transaksi -->
+            <a href="transaction-method.html">
+                <div class="border-b border-gray-300 py-4 flex items-center justify-between cursor-pointer hover:bg-gray-50">
+                    <span class="text-base font-medium text-gray-800">Metode Transaksi</span>
+                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 h-15">
+            <div class="flex justify-around items-center py-3">
+                <a href="home.html">
+                  <button class="flex flex-col items-center gap-1">
+                      <svg class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 00.707-1.707l-9-9a.999.999 0 00-1.414 0l-9 9A1 1 0 003 13z"></path>
+                      </svg>
+                  </button>
+                </a>
+                <a href="profile.html">
+                  <button class="flex flex-col items-center gap-1">
+                      <svg class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path>
+                      </svg>
+                  </button>
+                </a>
+                <a href="transaction.html">
+                  <button class="flex flex-col items-center gap-1">
+                      <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                      </svg>
+                      <div class="w-8 h-1 bg-gray-900 rounded-full"></div>
+                  </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

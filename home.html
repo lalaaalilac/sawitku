@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SawitKu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-md mx-auto bg-white min-h-screen">
+        <!-- Header -->
+        <div class="bg-gray-200 px-6 py-4 flex justify-between items-center">
+            <h1 class="text-lg font-medium">Beranda</h1>
+            <button class="relative">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+                </svg>
+                <span class="absolute top-0 right-0 w-2 h-2 bg-teal-500 rounded-full"></span>
+            </button>
+        </div>
+
+        <!-- Greeting Section -->
+        <div class="px-6 py-6">
+            <div class="grid grid-cols-[1fr_auto] gap-4 items-start">
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-2">Halo Budiman!</h2>
+                    <p class="text-gray-600">Kamis, 25 Mei 2025</p>
+                </div>
+                <img src="asset/logo.png" alt="SawitKu Logo" class="w-[180px]">
+            </div>
+        </div>
+
+        <!-- Berita Terbaru Section -->
+        <div class="px-6 pb-6">
+            <a href="news.html">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Berita Terbaru</h3>
+            </a>
+            <div class="flex gap-3 overflow-x-auto pb-2">
+                <!-- Card 1 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-1.png" alt="Plant" class="w-full h-full object-cover">
+                </div>
+                <!-- Card 2 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-2.png" alt="Coral Plant" class="w-full h-full object-cover">
+                </div>
+                <!-- Card 3 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-1.png" alt="Plant" class="w-full h-full object-cover">
+                </div>
+                <!-- Card 4 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-2.png" alt="Coral Plant" class="w-full h-full object-cover">
+                </div>
+                <!-- Card 5 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-1.png" alt="Plant" class="w-full h-full object-cover">
+                </div>
+                <!-- Card 6 -->
+                <div class="flex-shrink-0 w-36 h-36 bg-gray-200 rounded-xl overflow-hidden">
+                    <img src="asset/news-2.png" alt="Coral Plant" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="px-6 pb-24">
+            <!-- Surat Pengantar TBS -->
+            <a href="form-tbs.html">
+              <div class="bg-white border border-gray-200 rounded-xl p-4 mb-3 flex items-center justify-between shadow-sm">
+                  <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                          </svg>
+                      </div>
+                      <span class="font-medium text-gray-900">Surat Pengantar TBS</span>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+              </div>
+            </a>
+
+            <!-- Informasi Harga Sawit -->
+            <a href="info.html">
+              <div class="bg-white border border-gray-200 rounded-xl p-4 mb-3 flex items-center justify-between shadow-sm">
+                  <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                          </svg>
+                      </div>
+                      <span class="font-medium text-gray-900">Informasi Harga Sawit</span>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+              </div>
+            </a>
+
+            <!-- Jadwal Panen -->
+            <a href="calendar.html">
+              <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-between shadow-sm">
+                  <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                          <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                          </svg>
+                      </div>
+                      <span class="font-medium text-gray-900">Jadwal Panen</span>
+                  </div>
+                  <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+              </div>
+            </a>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 h-15">
+          <div class="flex justify-around items-center py-3">
+              <a href="home.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 00.707-1.707l-9-9a.999.999 0 00-1.414 0l-9 9A1 1 0 003 13z"></path>
+                    </svg>
+                    <div class="w-8 h-1 bg-gray-900 rounded-full"></div>
+                </button>
+              </a>
+              <a href="profile.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path>
+                    </svg>
+                </button>
+              </a>
+              <a href="transaction.html">
+                <button class="flex flex-col items-center gap-1">
+                    <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                </button>
+              </a>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
